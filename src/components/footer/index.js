@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import COLORS from "../../globalStyles/constants";
-
 const Footer = () => {
   return (
     <>

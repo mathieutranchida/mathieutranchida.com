@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import { FiX } from "react-icons/fi";
-
 const Contact = () => {
   return (
     <>
