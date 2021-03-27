@@ -115,12 +115,13 @@ const CollaborationsWrapper = () => {
         <Main>
           <Collaborations>
             <Div>
-              {collabs.map((collab, key) => {
+              {collabs.map((collab, index) => {
                 return (
                   <A
                     href={collab.link}
                     target="_blank"
                     rel="noopener noreferrer"
+                    key={index}
                   >
                     <Image src={collab.logoSrc} alt={collab.alt} />
                   </A>

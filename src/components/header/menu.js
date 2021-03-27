@@ -28,9 +28,6 @@ const Menu = () => {
       duration: 0.7,
       right: "-100%",
       ease: "power1.in",
-      onComplete: {
-        display: "none",
-      },
     });
     gsap.to(backgroundLayer, {
       duration: 0.7,
