@@ -13,7 +13,7 @@ const Header = () => {
       <Wrapper>
         <Contact />
         <Logo
-          src="https://res.cloudinary.com/dldqebddc/image/upload/v1614221970/mathieutranchida.io/logo/logo_ces9cw.svg"
+          src="https://res.cloudinary.com/dldqebddc/image/upload/v1616855579/mathieutranchida.com/logo/Logo_Black_-_Mathieu_Tranchida_so31vq.png"
           alt="Mathieu Tranchida's logo"
           onClick={() => {
             history.push("/");
@@ -37,8 +37,7 @@ const Logo = styled.img`
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-  border: red 1px solid;
-  @media (max-width: 1025px) {
+  @media (max-width: 500px) {
     left: 50px;
   }
 `;

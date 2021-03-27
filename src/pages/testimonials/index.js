@@ -8,8 +8,8 @@ const Testimonies = () => {
   return (
     <>
       <Wrapper>
-        <TestimonialWrapper>
-          <Title>Testimonials</Title>
+        <Title>Testimonials</Title>
+        <TextDiv>
           <Text>
             "Mat’s artistic vision always blows my mind. His enthusiasm and
             passion for the work he does is extremely inspiring. He never takes
@@ -73,7 +73,9 @@ const Testimonies = () => {
             Mathieu person of great talent that I can recommend without
             hesitation!"
           </Text>
-          <LastPerson>Felicien Roy, Climber</LastPerson>
+          <Person>Felicien Roy, Climber</Person>
+        </TextDiv>
+        <ButtonWrapper>
           <Button
             onClick={() => {
               history.push("/");
@@ -81,71 +83,87 @@ const Testimonies = () => {
           >
             Back to homepage
           </Button>
-        </TestimonialWrapper>
+        </ButtonWrapper>
       </Wrapper>
     </>
   );
 };
 
 const Wrapper = styled.div`
-  min-height: calc(100vh - 100px);
-  display: flex;
-  justify-content: center;
-`;
-
-const TestimonialWrapper = styled.div`
+  min-height: calc(100vh - 75px);
   max-width: 1000px;
-  margin: 115px 100px 80px 100px;
-  @media (max-width: 1025px) {
-    margin: 80px 100px 80px 100px;
+  margin: 0px auto;
+  padding: 0px 100px;
+  @media (max-width: 1000px) {
+    padding: 0px 75px;
   }
-  @media (max-width: 750px) {
-    margin: 80px 75px 60px 75px;
+  @media (max-width: 868px) {
+    padding: 0px 50px;
   }
   @media (max-width: 500px) {
-    margin: 80px 50px 50px 50px;
+    padding: 0px 30px;
   }
 `;
 
 const Title = styled.h1`
-  text-align: center;
   text-transform: uppercase;
-  font-weight: 900;
   font-family: sweet-sans-pro, sans-serif;
-  font-size: 1.4rem;
-  margin-bottom: 25px;
-  margin-top: 0px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 150px;
+  margin: 0px;
+  @media (max-width: 1000px) {
+    padding-top: 115px;
+  }
+  @media (max-width: 868px) {
+    padding-top: 100px;
+  }
 `;
 
-const Text = styled.div`
+const TextDiv = styled.div`
+  padding-top: 30px;
+  margin: 0px;
+  @media (max-width: 800px) {
+    padding-top: 15px;
+  }
+  @media (max-width: 500px) {
+    padding-top: 5px;
+  }
+`;
+
+const Text = styled.p`
   font-weight: 300;
   margin-bottom: 15px;
   text-indent: 40px;
   text-align: justify;
 `;
 
-const Person = styled.div`
+const Person = styled.p`
   font-weight: 500;
   margin-bottom: 65px;
   text-align: right;
 `;
 
-const LastPerson = styled.div`
-  font-weight: 500;
-  margin-bottom: 5px;
-  text-align: right;
-`;
-
 const Button = styled.button`
-  text-align: right;
   font-family: sweet-sans-pro, sans-serif;
   text-transform: uppercase;
-  float: right;
+  font-weight: 600;
   background-color: transparent;
-  border: none;
-  outline: none;
-  padding: 0px;
+  border: black solid 2px;
+  padding: 10px 20px;
+  margin-bottom: 12px;
   cursor: pointer;
+  transition: 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+  }
+`;
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
 `;
 
 export default Testimonies;

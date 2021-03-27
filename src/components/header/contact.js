@@ -25,7 +25,7 @@ const ContactWrapper = styled.div`
   &:hover {
     transform: translateX(10px);
   }
-  @media (max-width: 1025px) {
+  @media (max-width: 500px) {
     display: none;
   }
 `;

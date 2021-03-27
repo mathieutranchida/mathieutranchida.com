@@ -74,7 +74,7 @@ const Menu = () => {
           <Link to="/testimonials" onClick={closeMenu}>
             Testimonials
           </Link>
-          <Link to="/Services" onClick={closeMenu}>
+          <Link to="/services" onClick={closeMenu}>
             Services
           </Link>
           <LinkContact to="/contact" onClick={closeMenu}>
@@ -92,7 +92,7 @@ const HamburgerWrapper = styled.button`
   justify-content: right;
   align-items: center;
   top: 29px;
-  right: -16px;
+  right: -26px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -102,12 +102,12 @@ const HamburgerWrapper = styled.button`
   }
 `;
 
-const Header = styled.div`
+const Header = styled.h1`
   margin-right: 15px;
   color: white;
   text-transform: uppercase;
   font-family: sweet-sans-pro, sans-serif;
-  font-size: 12pt;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 2px;
   color: black;
@@ -122,7 +122,7 @@ const LineWrapper = styled.div`
 
 const Line = styled.div`
   border-bottom: 2px solid black;
-  width: 50px;
+  width: 60px;
 `;
 
 const BackgroundLayer = styled.div`
@@ -166,6 +166,7 @@ const X = styled(FiX)`
 const LinkDiv = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   position: relative;
   top: 42%;
   transform: translate(0%, -40%);
@@ -173,7 +174,6 @@ const LinkDiv = styled.div`
 `;
 
 const Link = styled(NavLink)`
-  color: white;
   text-transform: uppercase;
   font-family: sweet-sans-pro, sans-serif;
   font-size: 2rem;
@@ -184,6 +184,7 @@ const Link = styled(NavLink)`
   text-decoration: none;
   padding: 7px 10px;
   transition: 300ms ease-in-out;
+  width: fit-content;
   &.active {
     padding: 7px 50px 7px 10px;
   }
@@ -216,6 +217,7 @@ const LinkContact = styled(NavLink)`
   text-decoration: none;
   padding: 50px 10px 0px 0px;
   transition: 300ms ease-in-out;
+  width: fit-content;
   &.active {
     padding: 50px 50px 0px 0px;
   }
