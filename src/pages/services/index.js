@@ -2,8 +2,114 @@ import React from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 
-const Contact = () => {
+import Contact from "../../components/emailjs/index";
+
+const Services = () => {
   const history = useHistory();
+
+  const services = [
+    {
+      title: "The Casual",
+      price: "$200",
+      imageSrc: "",
+      imageAlt: "",
+      description:
+        "A professional one-hour photoshoot in low-risk environment such as a climbing gym, skatepark, urban, etc.",
+      subheader: "What you're getting:",
+      listItems: [
+        "One-hour photo session with photographer Mathieu Tranchida.",
+        "Professional retouching of four photos.",
+        "Digital delivery of four high resolution photos. Maximum of two action photos. Delay of five days between shoot and digital delivery.",
+        "Personnal use license (does not include commercial use).",
+        "Subject to the photographer's availability.",
+        "Does not include transportation, equipment rentals, and taxes (if applicable).",
+        "No refund.",
+      ],
+    },
+    {
+      title: "The Hiker",
+      price: "$400",
+      imageSrc: "",
+      imageAlt: "",
+      description:
+        "A professional one-day expedition photoshoot in medium-risk environment and activities such as in-bound skiing, trail, hiking, etc.",
+      subheader: "What you're getting:",
+      listItems: [
+        "One-day photo session with photographer Mathieu Tranchida.",
+        "Professional retouching of ten photos.",
+        "Digital delivery of ten high resolution photos. Delay of five days between shoot and digital delivery.",
+        "Personnal use license (does not include commercial use).",
+        "Subject to the photographer's availability.",
+        "Does not include transportation, equipment rentals, and taxes (if applicable).",
+        "No refund.",
+      ],
+    },
+    {
+      title: "The Sender",
+      price: "$500",
+      imageSrc: "",
+      imageAlt: "",
+      description:
+        "A professional one-day photoshoot in high-risk environment such as climbing, ice-climbing, out-bound ski touring, etc.",
+      subheader: "What you're getting:",
+      listItems: [
+        "One-day photo session with photographer Mathieu Tranchida.",
+        'One "high-risk" photo (ex: on a rope).',
+        "Professional retouching of six photos.",
+        "Digital delivery of six high resolution photos. Delay of five days between shoot and digital delivery.",
+        "Personnal use license (does not include commercial use).",
+        "Subject to the photographer's availability.",
+        "Does not include transportation, equipment rentals, and taxes (if applicable).",
+        "No refund.",
+      ],
+    },
+    {
+      title: "The Sponsored",
+      price: "$750",
+      imageSrc: "",
+      imageAlt: "",
+      description:
+        "A professional one-day photoshoot in high-risk environment with commercial license.",
+      subheader: "What you're getting:",
+      listItems: [
+        "One-day photo session with photographer Mathieu Tranchida.",
+        "Professional retouching of six photos. Three re-edits avilable.",
+        "Digital delivery of a six amount of high resolution photos. Delay of five days between shoot and digital delivery.",
+        "Commercial use license for limited use (contact me for more information).",
+        "Subject to the photographer's availability.",
+        "Does not include transportation, equipment rentals, and taxes (if applicable).",
+        "No refund.",
+      ],
+    },
+    {
+      title: "The Manager",
+      price: "+$1,250",
+      imageSrc: "",
+      imageAlt: "",
+      description:
+        "Hire me as a full-time photographer on your project. I'll manage other photographers, take care of photography media related duties, take photos, and much more.",
+      subheader: "What you're getting:",
+      listItems: [
+        "Pre-shoot work, multi-day photoshoot and, after-shoot work.",
+        "Professional retouching of a custom amount of photos.",
+        "Digital delivery of a custom amount of high resolution photos. Delay of ten days between shoot and digital delivery.",
+        "Commercial use license.",
+        "Subject to the photographer's availability.",
+        "Does not include transportation, equipment rentals, and taxes (if applicable).",
+        "No refund.",
+      ],
+    },
+    {
+      title: "The Custom",
+      price: "$???",
+      imageSrc: "",
+      imageAlt: "",
+      description:
+        "Previous services provide a great baseline for you to get an idea of what I charge. However, if you feel like none of them come close to what you need and still think I'm the guy for your project, pitch me your idea in the contact form below or call me at +1 (438) 927-7693.",
+      subheader: "",
+      listItems: [],
+    },
+  ];
 
   return (
     <>
@@ -13,11 +119,10 @@ const Contact = () => {
           <Description>
             Here, you can get an idea of the services I provide, what they
             include, and what I generally charge for them. Take it as a
-            baseline, every project is unique and requires special treatment.
-            The final price will fluctuate in accordance with your specific
-            needs.
+            baseline, your project is unique and will require special treatment.
+            The final price will fluctuate in accordance with your needs.
           </Description>
-          <Strong>Ready to book a session?</Strong>
+          <Strong>Ready to book your session?</Strong>
           <Description>
             Pitch me your project through the contact form below or call me
             directly at{" "}
@@ -25,77 +130,37 @@ const Contact = () => {
           </Description>
         </DescriptionDiv>
         <GridWrapper>
-          <GridElement>
-            <GridItemPhoto>Illustration with name here</GridItemPhoto>
-            <GridItemTextWrapper>
-              <GITHeader>The Casual - $250</GITHeader>
-              <GITDescription>
-                A one-hour professional photoshoot in easy-access / low-risk
-                environment such as a climbing gym, skatepark, in-bound ski
-                resort, urban, etc.
-              </GITDescription>
-              <GITSubHeader>What you're getting:</GITSubHeader>
-              <GITList>
-                <GITListItem>
-                  One-hour photo session with photographer Mathieu Tranchida.
-                </GITListItem>
-                <GITListItem>
-                  Professional retouching of four photos.
-                </GITListItem>
-                <GITListItem>
-                  Digital delivery of four high resolution photos. Maximum of
-                  two action photos. Delay of five days between shoot and
-                  digital delivery.
-                </GITListItem>
-                <GITListItem>
-                  Personnal use license (does not include commercial use).
-                </GITListItem>
-                <GITListItem>
-                  Subject to the photographer's availability.
-                </GITListItem>
-                <GITListItem>
-                  Does not include transportation and taxes (if applicable).
-                </GITListItem>
-                <GITListItem>No refund.</GITListItem>
-              </GITList>
-            </GridItemTextWrapper>
-          </GridElement>
-          <GridElement>
-            <GridItemPhoto>Illustration with name here</GridItemPhoto>
-            <GridItemTextWrapper>
-              <GITHeader>The Casual - $250</GITHeader>
-              <GITDescription>
-                A one-hour professional photoshoot in easy-access / low-risk
-                environment such as a climbing gym, skatepark, in-bound ski
-                resort, urban, etc.
-              </GITDescription>
-              <GITSubHeader>What you're getting:</GITSubHeader>
-              <GITList>
-                <GITListItem>
-                  One-hour photo session with photographer Mathieu Tranchida.
-                </GITListItem>
-                <GITListItem>
-                  Professional retouching of four photos.
-                </GITListItem>
-                <GITListItem>
-                  Digital delivery of four high resolution photos. Maximum of
-                  two action photos. Delay of five days between shoot and
-                  digital delivery.
-                </GITListItem>
-                <GITListItem>
-                  Personnal use license (does not include commercial use).
-                </GITListItem>
-                <GITListItem>
-                  Subject to the photographer's availability.
-                </GITListItem>
-                <GITListItem>
-                  Does not include transportation and taxes (if applicable).
-                </GITListItem>
-                <GITListItem>No refund.</GITListItem>
-              </GITList>
-            </GridItemTextWrapper>
-          </GridElement>
+          {services.map((service, index) => {
+            return (
+              <GridElement key={index}>
+                <GridItemPhoto>Illustration with name here</GridItemPhoto>
+                <GridItemTextWrapper>
+                  <GITHeader>
+                    {service.title} | {service.price}
+                  </GITHeader>
+                  <GITDescription>{service.description}</GITDescription>
+                  <GITSubHeader>{service.subheader}</GITSubHeader>
+                  <GITList>
+                    {service.listItems.map((item, index) => {
+                      return <GITListItem key={index}>{item}</GITListItem>;
+                    })}
+                  </GITList>
+                </GridItemTextWrapper>
+              </GridElement>
+            );
+          })}
         </GridWrapper>
+        <AftergridWrapper>
+          <Strong>Ready to book your session?</Strong>
+          <Description>
+            Pitch me your project through the contact form below or call me
+            directly at{" "}
+            <span style={{ display: "inline-block" }}>+1 (438) 927-7693.</span>
+          </Description>
+        </AftergridWrapper>
+        <ContactWrapper>
+          <Contact />
+        </ContactWrapper>
         <ButtonWrapper>
           <Button
             onClick={() => {
@@ -114,13 +179,8 @@ const Wrapper = styled.div`
   min-height: calc(100vh - 75px);
   max-width: 1000px;
   margin: 0px auto;
-  padding: 0px 100px;
-  @media (max-width: 1000px) {
-    padding: 0px 75px;
-  }
-  @media (max-width: 868px) {
-    padding: 0px 50px;
-  }
+  padding: 0px 50px;
+
   @media (max-width: 500px) {
     padding: 0px 30px;
   }
@@ -169,21 +229,59 @@ const Description = styled.p`
 const GridWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 35px;
+  grid-column-gap: 50px;
   margin-top: 35px;
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0px;
+    max-width: 800px;
+    margin: 35px auto 0px auto;
+  }
+  @media (max-width: 780px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const GridElement = styled.div`
   width: 300px;
   margin: 0px auto;
+  @media (max-width: 380px) {
+    width: 280px;
+  }
+  @media (max-width: 350px) {
+    width: 260px;
+  }
+  @media (max-width: 330px) {
+    width: 240px;
+  }
+  @media (max-width: 305px) {
+    width: 100%;
+  }
 `;
 
 const GridItemPhoto = styled.div`
-  width: 298px;
-  height: 348px;
+  width: 296px;
+  height: 346px;
   border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 380px) {
+    width: 276px;
+    height: 300px;
+  }
+  @media (max-width: 350px) {
+    width: 256px;
+    height: 280px;
+  }
+  @media (max-width: 330px) {
+    width: 236px;
+    height: 260px;
+  }
+  @media (max-width: 305px) {
+    display: none;
+  }
 `;
 
 const GridItemTextWrapper = styled.div`
@@ -197,12 +295,14 @@ const GITHeader = styled.h3`
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 2px;
+  text-align: center;
 `;
 
 const GITDescription = styled.p`
   margin: 10px 0px 0px 0px;
   font-weight: 300;
   font-size: 1rem;
+  text-align: justify;
 `;
 
 const GITSubHeader = styled.h4`
@@ -225,6 +325,14 @@ const GITListItem = styled.li`
   font-size: 0.9rem;
 `;
 
+const AftergridWrapper = styled.div`
+  margin-top: 40px;
+`;
+
+const ContactWrapper = styled.div`
+  margin-top: 40px;
+`;
+
 const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -245,4 +353,4 @@ const Button = styled.button`
   }
 `;
 
-export default Contact;
+export default Services;
