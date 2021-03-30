@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 const Contact = () => {
   return (
     <>
-      <ContactWrapper>
+      <ContactWrapper to="/contact">
         <LineWrapper>
           <Line />
         </LineWrapper>
@@ -14,13 +15,14 @@ const Contact = () => {
   );
 };
 
-const ContactWrapper = styled.div`
+const ContactWrapper = styled(NavLink)`
   position: absolute;
   display: flex;
   align-items: center;
-  top: 30px;
+  top: 32px;
   left: -20px;
   cursor: pointer;
+  text-decoration: none;
   transition: 500ms ease;
   &:hover {
     transform: translateX(10px);

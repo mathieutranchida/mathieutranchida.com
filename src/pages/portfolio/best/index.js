@@ -29,11 +29,11 @@ const images = [
       "https://res.cloudinary.com/dldqebddc/image/upload/v1616781274/mathieutranchida.com/portfolio/best/portfolio_best_website-4_wgg0ct.jpg",
     athleteName: "Remco Kayser",
   },
-  {
-    imageSrc:
-      "https://res.cloudinary.com/dldqebddc/image/upload/v1616781275/mathieutranchida.com/portfolio/best/portfolio_best_website-10_tlhxxj.jpg",
-    athleteName: "Lysanne Richard & Yves Millord",
-  },
+  // {
+  //   imageSrc:
+  //     "https://res.cloudinary.com/dldqebddc/image/upload/v1616781275/mathieutranchida.com/portfolio/best/portfolio_best_website-10_tlhxxj.jpg",
+  //   athleteName: "Lysanne Richard & Yves Millord",
+  // },
   {
     imageSrc:
       "https://res.cloudinary.com/dldqebddc/image/upload/v1616781275/mathieutranchida.com/portfolio/best/portfolio_best_website-2_jednhj.jpg",

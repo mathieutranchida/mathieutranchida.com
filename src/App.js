@@ -10,6 +10,7 @@ import PortfolioSkiing from "./pages/portfolio/skiing/index";
 import PortfolioClimbing from "./pages/portfolio/climbing/index";
 import PortfolioLifestyle from "./pages/portfolio/lifestyle/index";
 import PortfolioLandscape from "./pages/portfolio/landscape/index";
+import Stories from "./pages/stories/home/index";
 import Testimonies from "./pages/testimonials/index";
 import Services from "./pages/services/index";
 import Contact from "./pages/contact/index";
@@ -43,6 +44,9 @@ const App = () => {
                 </Route>
                 <Route path="/portfolio/landscape">
                   <PortfolioLandscape />
+                </Route>
+                <Route path="/stories">
+                  <Stories />
                 </Route>
                 <Route path="/testimonials">
                   <Testimonies />

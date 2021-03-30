@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
+import { Link, scroller } from "react-scroll";
 
 import Contact from "../../components/emailjs/index";
 
@@ -124,8 +125,26 @@ const Services = () => {
           </Description>
           <Strong>Ready to book your session?</Strong>
           <Description>
-            Pitch me your project through the contact form below or call me
-            directly at{" "}
+            Pitch me your project through the{" "}
+            <ScrollTo
+              to="services-contact-wrapper"
+              smooth={true}
+              duration={500}
+              tabIndex="0"
+              aria-label="Scroll to contact form"
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.stopPropagation();
+                  scroller.scrollTo("services-contact-wrapper", {
+                    smooth: true,
+                    duration: 500,
+                  });
+                }
+              }}
+            >
+              contact form below
+            </ScrollTo>{" "}
+            or call me directly at{" "}
             <span style={{ display: "inline-block" }}>+1 (438) 927-7693.</span>
           </Description>
         </DescriptionDiv>
@@ -158,7 +177,7 @@ const Services = () => {
             <span style={{ display: "inline-block" }}>+1 (438) 927-7693.</span>
           </Description>
         </AftergridWrapper>
-        <ContactWrapper>
+        <ContactWrapper id="services-contact-wrapper">
           <Contact />
         </ContactWrapper>
         <ButtonWrapper>
@@ -224,6 +243,14 @@ const Description = styled.p`
   text-align: center;
   padding: 0px 0px 10px 0px;
   margin: 0px;
+`;
+
+const ScrollTo = styled(Link)`
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
 `;
 
 const GridWrapper = styled.div`
@@ -326,7 +353,10 @@ const GITListItem = styled.li`
 `;
 
 const AftergridWrapper = styled.div`
-  margin-top: 40px;
+  margin-top: 100px;
+  @media (max-width: 1100px) {
+    margin-top: 50px;
+  }
 `;
 
 const ContactWrapper = styled.div`

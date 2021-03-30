@@ -17,9 +17,9 @@ const Contact = () => {
             Reach out for prints, photoshoots, lessons, or any other inquiry.
           </Description>
           <Description>
-            I'll do my best to answer within three days. You can also join me by
-            phone at (438) 927-7693, by email at mathieu.tranchida@gmail.com and
-            on my Instagram page (@mathieutranchida).
+            I'll do my best to answer within three days. You can also call me
+            directly at{" "}
+            <span style={{ display: "inline-block" }}>+1 (438) 927-7693.</span>
           </Description>
         </DescriptionDiv>
         <ContactDiv>

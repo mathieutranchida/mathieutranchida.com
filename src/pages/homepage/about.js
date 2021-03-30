@@ -15,29 +15,35 @@ const About = () => {
             <Text>
               Hey! I'm Mathieu Tranchida; an outdoor action photographer
               specialized in extreme sports photography. I am based in Montreal
-              and travel worldwide for my projects.
+              and love to travel worldwide for projects.
             </Text>
             <Text>
-              As a photographer, I work with passion and only undertake projects
-              I feel inspired by. Over the years, I have produced content for
-              professional athletes, brands, events, and magazines (see my
-              collaborations below). My process is authentic. My editing style
-              is minimal. I aim to tell a story as it happened.
+              As a photographer, I work with passion and undertake projects that
+              inspire me. Over the years, I have produced content for
+              professional athletes, world-renowned brands, events, and
+              magazines (see my collaborations below). My process is authentic.
+              My editing style is minimal. I aim to tell a story as honestly as
+              possible.
             </Text>
             <Text>
-              I am comfortable in the mountains and I have shown the ability to
-              operate in complex terrain with professional camera equipment. I
-              am a certified Advanced Wilderness First Aider (AWFA) and an
-              Avalanche Safety Training 1 (AST1) graduate. I am also able to do
-              rope operations for shoots requiring me to be in the air. These
-              abilities allow me to be completely autonomous, leaving the
-              athlete in their zone, ultimately leading to more authentic
-              pictures.
+              Through my experience in skiing, rock climbing, hiking and cycling
+              I am comfortable in most conditions. Not only do I have the
+              ability to work in complex, challenging terrain but I also enjoy
+              it and feel at ease working with professional camera equipment in
+              this environment. I am a certified Advanced Wilderness First Aider
+              (AWFA) and an Avalanche Safety Training 1 (AST1) graduate. I am
+              also capable to set up ascender/rope rigs for shoots that require
+              me to be suspended in the air. These abilities allow me to be
+              completely autonomous, leaving the athlete in their zone, keeping
+              the moment focused/genuine and ultimately leading to more
+              authentic pictures.
             </Text>
             <Text>
               Finally, my experience in marketing, social media, and web
               development allows me to fully understand your needs and gives me
               the keys to produce the shot you didn't know you needed.
+              Additionally, I have a degree in international business and
+              management, and a diploma in web development.
             </Text>
           </div>
         </Main>

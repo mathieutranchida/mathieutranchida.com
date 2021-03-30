@@ -91,7 +91,7 @@ const HamburgerWrapper = styled.button`
   display: flex;
   justify-content: right;
   align-items: center;
-  top: 29px;
+  top: 20px;
   right: -26px;
   background-color: transparent;
   border: none;
