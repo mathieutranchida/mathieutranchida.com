@@ -152,11 +152,12 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h3`
-  text-align: center;
   text-transform: uppercase;
-  font-weight: 900;
   font-family: sweet-sans-pro, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
 `;
 
 const Main = styled.div`

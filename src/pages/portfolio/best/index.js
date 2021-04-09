@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Header from "../../../components/headerPortfolio/index";
+import Nav from "../../../components/headerPortfolio/index";
 
 const images = [
   {
@@ -60,7 +60,8 @@ const PortfolioBest = () => {
   return (
     <>
       <Wrapper>
-        <Header />
+        <Header>Portfolio</Header>
+        <Nav />
         <Main>
           {images.map((image) => {
             return (
@@ -77,15 +78,35 @@ const PortfolioBest = () => {
           })}
         </Main>
         <div style={{ marginTop: "25px" }}>
-          <Header />
+          <Nav />
         </div>
       </Wrapper>
     </>
   );
 };
 
-const Wrapper = styled.div`
-  margin-top: 100px;
+const Wrapper = styled.div``;
+
+const Header = styled.h1`
+  text-transform: uppercase;
+  font-family: sweet-sans-pro, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 115px;
+  padding-bottom: 25px;
+  margin: 0px;
+  @media (max-width: 1000px) {
+    padding-top: 115px;
+  }
+  @media (max-width: 868px) {
+    padding-top: 100px;
+    padding-bottom: 15px;
+  }
+  @media (max-width: 500px) {
+    padding-top: 80px;
+  }
 `;
 
 const Main = styled.div`

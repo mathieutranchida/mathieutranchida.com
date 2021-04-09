@@ -8,7 +8,7 @@ const About = () => {
         <Title>About me</Title>
         <Main>
           <Image
-            src="https://res.cloudinary.com/dldqebddc/image/upload/v1612820352/mathieutranchida.io/photos/MathieuTranchidaWeb-6_insm6c.jpg"
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1617216239/mathieutranchida.com/homepage%20photos/MathieuTranchidaWeb-6_insm6c_fbfj7f.png"
             alt="mathieu tranchida's portrait"
           />
           <div>
@@ -53,7 +53,7 @@ const About = () => {
 };
 
 const Wrapper = styled.div`
-  margin-top: 150px;
+  margin-top: 100px;
   @media (max-width: 1150px) {
     margin-top: 75px;
     margin-bottom: 75px;
@@ -63,20 +63,22 @@ const Wrapper = styled.div`
     margin-bottom: 50px;
   }
   @media (max-width: 868px) {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 0px;
   }
   @media (max-width: 600px) {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 `;
 
 const Title = styled.h2`
-  text-align: center;
   text-transform: uppercase;
-  font-weight: 900;
   font-family: sweet-sans-pro, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 0px;
 `;
 
 const Main = styled.div`
@@ -85,16 +87,14 @@ const Main = styled.div`
   margin-right: auto;
   padding: 0px 100px;
   display: grid;
-  grid-template-columns: 250px 1fr;
-  grid-gap: 35px;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 40px;
+  margin-top: 25px;
   @media (max-width: 1000px) {
     padding: 0px 75px;
   }
   @media (max-width: 868px) {
     padding: 0px 50px;
-  }
-  @media (max-width: 800px) {
-    grid-template-columns: 1fr;
   }
   @media (max-width: 666px) {
     padding: 0px 50px;
@@ -111,11 +111,12 @@ const Text = styled.p`
 `;
 
 const Image = styled.img`
+  height: 95%;
   width: 100%;
-  height: 100%;
   object-fit: cover;
   display: block;
   user-select: none;
+  margin: 0px auto;
 `;
 
 export default About;

@@ -3,7 +3,10 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { gsap } from "gsap";
 
-import { disableScroll, enableScroll } from "../../customHooks/scrollFunctions";
+import {
+  disableScroll,
+  enableScroll,
+} from "../../../customHooks/scrollFunctions";
 import { FiX } from "react-icons/fi";
 
 const Menu = () => {
