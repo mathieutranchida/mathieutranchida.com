@@ -26,6 +26,7 @@ const Index = () => {
     gsap.to(headerRef, {
       duration: 0.5,
       y: "60px",
+      boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
       ease: "power3.inOut",
       scrollTrigger: {
         trigger: scrollTriggerRef,
@@ -139,7 +140,6 @@ const Wrapper = styled.div`
   height: 60px;
   background-color: white;
   z-index: 1;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 `;
 
 const Logo = styled.img`
