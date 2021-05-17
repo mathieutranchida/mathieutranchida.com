@@ -8,22 +8,20 @@ const About = () => {
         <Title>About me</Title>
         <Main>
           <Image
-            src="https://res.cloudinary.com/dldqebddc/image/upload/v1617216239/mathieutranchida.com/homepage%20photos/MathieuTranchidaWeb-6_insm6c_fbfj7f.png"
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1621290028/mathieutranchida.com/MathieuTranchidaPortrait_fd0b8u.jpg"
             alt="mathieu tranchida's portrait"
           />
           <div>
             <Text>
               Hey! I'm Mathieu Tranchida; an outdoor action photographer
-              specialized in extreme sports photography. I am based in Montreal
-              and love to travel worldwide for projects.
+              specialized in extreme sports photography based in Montreal.
             </Text>
             <Text>
-              As a photographer, I work with passion and undertake projects that
-              inspire me. Over the years, I have produced content for
-              professional athletes, world-renowned brands, events, and
-              magazines (see my collaborations below). My process is authentic.
-              My editing style is minimal. I aim to tell a story as honestly as
-              possible.
+              I work with passion and undertake projects that inspire me. Over
+              the years, I have produced content for professional athletes,
+              world-renowned brands, events, and magazines (see my
+              collaborations below). My process is authentic. My editing style
+              is minimal. I aim to tell a story as honestly as possible.
             </Text>
             <Text>
               Through my experience in skiing, rock climbing, hiking and cycling
@@ -97,7 +95,7 @@ const Main = styled.div`
     padding: 0px 50px;
   }
   @media (max-width: 666px) {
-    padding: 0px 50px;
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -113,10 +111,14 @@ const Text = styled.p`
 const Image = styled.img`
   height: 95%;
   width: 100%;
+  max-height: 336px;
   object-fit: cover;
   display: block;
   user-select: none;
   margin: 0px auto;
+  @media (max-width: 666px) {
+    max-height: inherit;
+  }
 `;
 
 export default About;

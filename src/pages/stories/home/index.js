@@ -86,11 +86,12 @@ const Stories = () => {
       <Wrapper>
         <Header>Stories</Header>
         <Main>
-          <Grid>
+          Coming soon.
+          {/* <Grid>
             {gridContent.map((item, index) => {
               return (
                 <>
-                  <GridItem>
+                  <GridItem key={index}>
                     {item.title}
                     <Image
                       src={item.imageSrc}
@@ -101,8 +102,17 @@ const Stories = () => {
                 </>
               );
             })}
-          </Grid>
+          </Grid> */}
         </Main>
+        <ButtonWrapper>
+          <Button
+            onClick={() => {
+              history.push("/");
+            }}
+          >
+            Back to homepage
+          </Button>
+        </ButtonWrapper>
       </Wrapper>
     </>
   );
@@ -169,10 +179,13 @@ const Grid = styled.div`
   }
 `;
 
-const GridItem = styled.div`
+const GridItem = styled.button`
   position: relative;
   width: 100%;
   height: 20vw;
+  border: none;
+  margin: none;
+  padding: 20px;
   color: white;
   display: flex;
   justify-content: center;
@@ -204,6 +217,11 @@ const GridItem = styled.div`
     color: transparent;
     text-shadow: none;
   }
+  &:focus {
+    background-color: rgba(0, 0, 0, 0);
+    color: transparent;
+    text-shadow: none;
+  }
 `;
 
 const Image = styled.img`
@@ -214,6 +232,26 @@ const Image = styled.img`
   top: 0px;
   left: 0px;
   z-index: -1;
+`;
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+`;
+
+const Button = styled.button`
+  font-family: sweet-sans-pro, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: transparent;
+  border: black solid 2px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+  }
 `;
 
 export default Stories;

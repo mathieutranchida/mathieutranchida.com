@@ -85,6 +85,28 @@ const Gallery = () => {
             />
           </I13>
         </Main>
+        <Second>
+          <Image
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1616551514/mathieutranchida.com/homepage%20photos/homepage_website-20_hlbj3h.jpg"
+            alt="Gallery image"
+          />
+          <Image
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1616551515/mathieutranchida.com/homepage%20photos/homepage_website-14_ui3zmu.jpg"
+            alt="Gallery image"
+          />
+          <Image
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1616551516/mathieutranchida.com/homepage%20photos/homepage_website-7_a8awm2.jpg"
+            alt="Gallery image"
+          />
+          <Image
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1616551516/mathieutranchida.com/homepage%20photos/homepage_website-10_khjxxu.jpg"
+            alt="Gallery image"
+          />
+          <Image
+            src="https://res.cloudinary.com/dldqebddc/image/upload/v1616551515/mathieutranchida.com/homepage%20photos/homepage_website-15_wvhnpw.jpg"
+            alt="Gallery image"
+          />
+        </Second>
       </Wrapper>
     </>
   );
@@ -176,6 +198,18 @@ const Main = styled.div`
   grid-template-rows: repeat(19, 2.7vw);
   grid-gap: 10px;
   padding: 0 10px;
+  @media (max-width: 750px) {
+    display: none;
+  }
+`;
+
+const Second = styled.div`
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  @media (min-width: 751px) {
+    display: none;
+  }
 `;
 
 const Image = styled.img`
